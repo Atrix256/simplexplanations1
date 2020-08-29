@@ -1,0 +1,90 @@
+----------------------------------------------------------------  TITLE
+
+Hello and welcome to the simplexplanations, a show that explores math and computer science topics in an approachable way.
+
+Today we are going to look at how computers look for things.
+
+----------------------------------------------------------------
+
+
+--#1--
+"The other day, my son Loki asked me what an algorithm was, so i decided to teach him about how computers search through lists."
+"If you are a parent watching this video, i encourage you to try this out with your children, ask them the questions this video asks you and see what they come up with."
+
+* show a computer and a human
+
+--#2--
+"The ultimate goal of a search algorithm is to either find a number, or realize it isn't there, as quickly as possible"
+"The faster a computer can do this, the faster the program can run, which for something like a video game means that you get higher frame rate"
+
+* show a kid playing a video game?
+
+--#3--
+"What a computer does to search a list isn't anything a human couldn't do, so we'll think about how we would search through lists."
+"These lists could be made up of anything, but usually the computer ends up searching for a number, so we'll search through numbers as well"
+
+* computer / human disappear.
+* show some numbers appearing into some boxes. semi transparent doors go over the top?
+
+--4--
+"When the numbers are all jumbled up like this, there isn't a whole lot we can do if we are looking for a number."
+"If we wanted to look for the number 5, we could start at the left side and look to the right until we found it and then stop."
+"If we wanted to look for the number 7 however, we'd have to look at all the numbers before we knew it wasn't there."
+
+* animate this happening as you are talking.
+
+--5--
+"If we sort the numbers though, we can do some more interesting things".
+
+* show then sorting
+
+"Once the numbers are sorted, if we want to look for the number 5, we can start at the left side, and go right until we find the number.  This is the same as before."
+"If we wanted to look for the number 7 though, we can stop as soon as we find a number larger than 7, instead of having to look at all of them."
+
+* animate while you are talking.
+
+--6--
+"This is better, but there is another clever trick you can do to search a sorted list more quickly.  You might want to pause the video and give it a think. See if you can figure out a better way"
+
+* pause for a minute... maybe show a clock animating? tick tock tick tock.
+
+--7--
+"What if we look at the number in the middle of the list?"
+"If the middle number is less than the number we are looking for, we can throw away everything to the left"
+"If the middle number is greater than the number we are looking for, we can throw away everything to the right"
+"Once we throw away part of the list, we just repeat the process"
+"When the middle number is the number we are looking for, or when we run out of numbers to test, we are done.".
+
+* show it searching for a couple numbers, greying out boxes as it searches, with a cursor where it searches
+
+--8--
+"This is called a binary search.  The first way we searched through a list makes you look through all the numbers at the very worst."
+"A binary search on the other hand has a worst case scenario of you looking through only log base 2 of the numbers"
+"That means that for a list that had 32 items in it, you will be done after looking at just 5 numbers when you use a binary search, instead of possibly having to look through all 32 numbers using the other way"
+"If your list had 65,000 items in it, you would only have to look at 16 numbers at most, instead of all 65,000".
+
+
+--9--
+"Binary search isn't the only way to search for a number in a sorted list though."
+"There is also something called an interpolation search where if you know the minimum and the maximum in the list you can use them to guess where the number might be"
+"This search can actually be very fast, especially when you flip back and forth between doing a binary search step and an interpolation search step.  Check out the link in the video description for more information"
+"this has to look through all items at worst too, but under ideal conditions is actually the log of the log of the number of items in the list so can be quite good"
+
+--10--
+"You can also use hashing to look for numbers"
+"It works by putting a value through a hash function which gives you the exact place to look to see if a number is there or not"
+"This can get you an answer in O(1) or constant time but there are some details about why it isn't used all the time having to do with memory allocations and hash collisions"
+
+* put an asterisk by that
+
+--11--
+"Lastly, quantum computers can actually search an unsorted list in O(sqrt(N)) using something called Grover's algorithm"
+"It's outside of the scope of this video to explain how that works but it is pretty cool, and it's worth knowing about"
+"with luck we'll have quantum computers before too long to help us do things that they excel at versus regular computers"
+
+
+
+--13--
+"If you liked this video, leave a comment and hit the subscribe button.
+"If you have questions in the realm of math or computer science that you'd like simplexplained, let me know"
+"See you next time!"
